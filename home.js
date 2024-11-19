@@ -18,17 +18,17 @@ menuBtn.addEventListener('click', () => {
     list.classList.toggle('show');
 });
 
-const qq = document.querySelector(".dropdown-content");
+const dropDown = document.querySelector(".dropdown-content");
 function s() {
-    qq.style.display = "flex";
+    dropDown.style.display = "flex";
 }
 
 function c() {
-    qq.style.display = "none";
+    dropDown.style.display = "none";
 }
 
 function showOrHide() {
-    if (qq.style.display === "none") {
+    if (dropDown.style.display === "none") {
         s()
     } else {
         c()
