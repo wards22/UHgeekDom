@@ -628,6 +628,8 @@ body {
         background-color: rgba(9, 46, 110, 0.9);
     }
 }
+/*  ------------------------------- */
+/*footer container ----------------*/
 
 .footer-bg {
     background: rgb(9, 46, 110);
@@ -651,7 +653,100 @@ body {
     margin-top: 0.5em;
     font-family: "Montserrat", sans-serif;
 }
+.footer {
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
 
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Adjust layout for small screens */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Flexible sections with a minimum width */
+    margin: 10px;
+    width: 150px; /* Set the width of the logo */
+}
+
+.footer-logo {
+    background-size: contain; /* Ensures the entire logo fits */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the logo */
+    width: 30px; /* Set the width of the logo */
+    height: 30px; /* Set the height of the logo */
+    margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+.sitemap {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap li {
+    margin-bottom: 5px;
+}
+
+.sitemap a {
+    text-decoration: none;
+    color: #00c4cc;
+    transition: color 0.3s ease;
+}
+
+.sitemap a:hover {
+    color: #ffdd57;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+.email-signup {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-signup input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-signup button {
+    padding: 10px;
+    background-color: #00c4cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-signup button:hover {
+    background-color: #ffdd57;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/********************************/
 @media (max-width: 1100px) {
     .layer-1-container {
         flex-direction: column;
