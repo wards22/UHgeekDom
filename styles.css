@@ -29,6 +29,10 @@ body {
     position: fixed;
     top: 0;
     z-index: 9;
+
+    .red-theme & {
+        background-color: rgba(198, 14, 59, 0.9)
+    }
 }
 
 .left-bar-container {
@@ -77,6 +81,10 @@ body {
     margin: 0 1em 0 1.05em;
     color: rgb(198, 14, 59);
     font-size: 36px;
+
+    .red-theme & {
+        color: rgb(9, 46, 110);
+    }
 }
 
 #themeController:hover {
@@ -110,7 +118,7 @@ body {
     position: absolute;
     left: -18em;
     top: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(198, 14, 59, 0.9);
     padding: 0.75rem;
     border-radius: 0.25rem;
     display: none;
@@ -118,6 +126,10 @@ body {
     width: 30em;
     text-align: center;
     color: white;
+
+    .red-theme & {
+        background-color: rgba(9, 46, 110, 0.9);
+    }
 }
 
 .about-our-project {
@@ -181,6 +193,10 @@ body {
     left: 0;
     bottom: -2px;
     transition: 0.3s;
+
+    .red-theme & {
+        background-image: linear-gradient(to left, rgb(198, 14, 59), rgb(9, 46, 110));
+    }
 }
 
 .games:hover:after, .anime:hover:after, .music:hover:after, .contact:hover:after {
@@ -201,7 +217,11 @@ body {
     top: 3.4em;
     width: 10em;
     right: -0.42em;
-    background: rgba(0, 0, 0, 0.9);
+    background-color: rgba(198, 14, 59, 0.9);
+
+    .red-theme & {
+        background-color: rgba(9, 46, 110, 0.9);
+    }
 }
 
 .right-bar-menu {
@@ -265,12 +285,16 @@ body {
     bottom: -19em;
     left: 50%;
     transform: translateX(-50%);
-    background: black;
+    background: rgb(9, 46, 110);
     padding: 7px;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    .red-theme & {
+        background: rgb(198, 14, 59);
+    }
 }
 
 .layer-1-bg-source-1 {
@@ -293,6 +317,10 @@ body {
     align-items: center;
     background-color: rgba(9, 46, 110, 0.9);
     box-shadow: 0 0 2em rgb(69, 69, 69);
+
+    .red-theme & {
+        background-color: rgba(198, 14, 59, 0.9);
+    }
 }
 
 .layer-1-left {
@@ -339,12 +367,20 @@ body {
     background-color: rgba(198, 14, 59, 0.9);
     transition: 0.3s;
     font-family: "Montserrat", sans-serif;
+
+    .red-theme & {
+        background-color: rgba(9, 46, 110, 0.9);
+    }
 }
 
 .layer-1-button:hover {
     transform: translateY(-3%);
     background: rgba(198, 14, 59, 0.7);
     box-shadow: 0 0 0.6em white;
+
+    .red-theme & {
+        background: rgba(9, 46, 110, 0.7)
+    }
 
 }
 
@@ -374,6 +410,10 @@ body {
 .layer-2-bg {
     background-color: rgb(198, 14, 59);
     margin-top: 18em;
+
+    .red-theme & {
+        background-color: rgb(9, 46, 110);
+    }
 }
 
 .layer-2-content {
@@ -386,6 +426,10 @@ body {
     color: rgb(9, 46, 110);
     margin: 0.5em 1em 1.5em 1em;
     font-family: "Montserrat", sans-serif;
+
+    .red-theme & {
+        color:rgb(198, 14, 59);
+    }
 }
 
 .layer-2-info-container {
@@ -412,6 +456,10 @@ body {
     box-shadow: 0 10px 30px black;
     transition: 0.3s;
     margin: -0.5em -1em -1em -1em;
+
+    .red-theme & {
+        border: 0.3em solid rgb(198, 14, 59);
+    }
 }
 
 .game-image:hover, .anime-image:hover, .music-image:hover, .crossword-image:hover, .coding-image:hover {
@@ -431,6 +479,10 @@ body {
     margin: 1em 0 1em 0;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
+
+    .red-theme & {
+        color: rgb(198, 14, 59);
+    }
 }
 
 .layer-3 {
@@ -446,13 +498,17 @@ body {
 }
 
 .layer-3-bg-source {
-    background: black;
+    background: rgb(9, 46, 110);
     border-radius: 1em;
     position: absolute;
     padding: 7px;
     color: white;
     display: block;
     bottom: 5px;
+
+    .red-theme & {
+        background: rgb(198, 14, 59);
+    }
 }
 
 .layer-3-text {
@@ -485,6 +541,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2.5em 0;
+
+    .red-theme & {
+        background-color: rgb(119, 188, 31);
+    }
+
 }
 
 .layer-4-content {
@@ -496,6 +557,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 2em;
+
+    .red-theme & {
+        background: rgb(198, 14, 59);
+    }
 
 }
 
@@ -535,10 +600,18 @@ body {
     text-align: center;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
+
+    .red-theme & {
+        background-color: rgb(9, 46, 110);
+    }
 }
 
 .layer-4-subscribe:hover {
     background-color: rgba(198, 14, 59, 0.9);
+
+    .red-theme & {
+        background-color: rgba(9, 46, 110, 0.9);
+    }
 }
 
 .footer-bg {
@@ -549,6 +622,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    .red-theme & {
+        background: rgb(198, 14, 59);
+    }
 }
 
 .footer-text {
@@ -675,9 +752,17 @@ body {
 @keyframes color-change {
     0% {
         background: rgb(9, 46, 110);
+
+        .red-theme & {
+            background: rgb(198, 14, 59);
+        }
     }
     100% {
         background: rgb(198, 14, 59);
+
+        .red-theme & {
+            background: rgb(9, 46, 110);
+        }
     }
 }
 

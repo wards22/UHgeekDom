@@ -1,3 +1,7 @@
+document.getElementById('themeController').addEventListener('click', function(){
+    document.body.classList.toggle('red-theme');
+});
+
 function themeController() {
 
 }
