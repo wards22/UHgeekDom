@@ -82,7 +82,11 @@ body {
     margin: 0 1em 0 1.05em;
     color: rgb(198, 14, 59);
     font-size: 36px;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         color: rgb(9, 46, 110);
@@ -128,7 +132,11 @@ body {
     width: 30em;
     text-align: center;
     color: white;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background-color: rgba(9, 46, 110, 0.9);
@@ -221,7 +229,11 @@ body {
     width: 10em;
     right: -0.42em;
     background-color: rgba(198, 14, 59, 0.9);
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background-color: rgba(9, 46, 110, 0.9);
@@ -295,7 +307,11 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background: rgb(198, 14, 59);
@@ -322,7 +338,11 @@ body {
     align-items: center;
     background-color: rgba(9, 46, 110, 0.9);
     box-shadow: 0 0 2em rgb(69, 69, 69);
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background-color: rgba(198, 14, 59, 0.9);
@@ -417,7 +437,11 @@ body {
 .layer-2-bg {
     background-color: rgb(198, 14, 59);
     margin-top: 18em;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background-color: rgb(9, 46, 110);
@@ -434,7 +458,11 @@ body {
     color: rgb(9, 46, 110);
     margin: 0.5em 1em 1.5em 1em;
     font-family: "Montserrat", sans-serif;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         color:rgb(198, 14, 59);
@@ -488,7 +516,11 @@ body {
     margin: 1em 0 1em 0;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         color: rgb(198, 14, 59);
@@ -515,7 +547,11 @@ body {
     color: white;
     display: block;
     bottom: 5px;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background: rgb(198, 14, 59);
@@ -552,7 +588,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2.5em 0;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background-color: rgb(119, 188, 31);
@@ -569,7 +609,11 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 2em;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background: rgb(198, 14, 59);
@@ -613,7 +657,11 @@ body {
     text-align: center;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background-color: rgb(9, 46, 110);
@@ -622,7 +670,11 @@ body {
 
 .layer-4-subscribe:hover {
     background-color: rgba(198, 14, 59, 0.9);
+<<<<<<< HEAD
     transition: all 0.15s ease-out;
+=======
+    transition: all 0.25s ease-out;
+>>>>>>> f40f3c667c732a89e6cafb6645b6b8f246c1aabe
 
     .red-theme & {
         background-color: rgba(9, 46, 110, 0.9);
@@ -677,8 +729,8 @@ body {
     background-size: contain; /* Ensures the entire logo fits */
     background-repeat: no-repeat; /* Prevents tiling */
     background-position: center; /* Centers the logo */
-    width: 30px; /* Set the width of the logo */
-    height: 30px; /* Set the height of the logo */
+    width: 200px;
+    height: 120px;
     margin-bottom: 10px; /* Add spacing below the logo */
 }
 

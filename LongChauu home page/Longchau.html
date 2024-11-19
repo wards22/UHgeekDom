@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Webpage</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #eaeaea;
+        margin: 0;
+        padding: 0;
+        background-image: url("background-image.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: #444;
+      }
+
+      h1,
+      h2 {
+        font-family: "Montserrat", sans-serif;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+        color: #333;
+        text-align: left;
+      }
+
+      /* Box Model for container (highlighted) */
+      .container {
+        background-color: rgba(221, 221, 221, 0.8);
+        margin: 50px auto;
+        max-width: 1200px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 40px; /* Added padding inside the container */
+        box-sizing: border-box; /* Ensures padding is included in total width/height */
+      }
+
+      .profile-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+      }
+
+      /* Box Model for img (highlighted) */
+      img {
+        width: 180px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        padding: 10px; /* Added padding inside the image */
+        box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+        margin: 20px; /* Added margin outside the image */
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      .text-container {
+        flex: 1;
+      }
+
+      p,
+      li {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      a {
+        color: #e76f51;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+      }
+
+      a:hover {
+        color: #f4a261;
+      }
+
+      .skills-coursework {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .skills {
+        flex: 1;
+      }
+
+      /* Coursework Table Styling */
+      .coursework {
+        flex: 2;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #00ff9d 0%, #013617 100%);
+      }
+
+      th,
+      td {
+        padding: 20px;
+        text-align: left;
+        font-size: 1.1rem;
+        color: #333;
+      }
+
+      th {
+        background-color: #01623d;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+
+      td {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:nth-child(even) td {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      tr:hover td {
+        background-color: rgba(173, 232, 244, 0.7);
+        transition: background-color 0.3s ease;
+      }
+
+      /* Contact Form Styling */
+      .contact-form {
+        margin-top: 40px;
+        background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 10px;
+        color: #fff;
+      }
+
+      input,
+      textarea {
+        width: 95%;
+        padding: 15px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: box-shadow 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        box-shadow: 0 0 8px rgba(42, 157, 143, 0.8);
+        outline: none;
+      }
+
+      button {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #2a9d8f;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s;
+      }
+
+      button:hover {
+        background-color: #38b6b6;
+        transform: translateY(-3px);
+      }
+
+      input:hover,
+      textarea:hover {
+        box-shadow: 0 0 8px rgba(42, 157, 143, 0.5);
+      }
+
+      /* Added Media query for smaller screens (highlighted) */
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        .container {
+          flex-direction: column; /* Stack elements vertically */
+          padding: 15px;
+        }
+
+        img {
+          width: 120px; /* Smaller image size for smaller screens */
+        }
+
+        h1 {
+          font-size: 2.5rem; /* Smaller header font size */
+        }
+
+        .profile-section {
+          flex-direction: column; /* Stacks the profile section vertically */
+        }
+
+        .text-container,
+        .coursework {
+          max-width: 100%; /* Ensure text and coursework containers use full width */
+        }
+
+        form {
+          max-width: 100%; /* Form takes full width on small screens */
+        }
+      }
+      /* Dark Mode Styling */
+      /* Dark Mode Styling */
+      .dark-mode {
+        background-color: #333;
+        color: #ffffff; /* Makes all text white by default */
+      }
+
+      .dark-mode h1,
+      .dark-mode h2,
+      .dark-mode p,
+      .dark-mode li,
+      .dark-mode td {
+        color: #ffffff; /* Ensures headers, paragraphs, lists, and table cells are white */
+      }
+
+      .dark-mode a {
+        color: #9bdaff; /* Light blue for links */
+      }
+
+      .dark-mode a:hover {
+        color: #77c6e7; /* Slightly darker blue for hovered links */
+      }
+
+      .dark-mode button {
+        background-color: #555;
+        color: #ffffff; /* White text for buttons */
+      }
+
+      .dark-mode input,
+      .dark-mode textarea {
+        background-color: #555;
+        color: #ffffff; /* White text for form inputs */
+      }
+      .dark-mode .container {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); /* Changes container background to black with slight transparency */
+      }
+      .dark-mode th {
+        background-color: #636060; /* Changes table header background to black */
+        background-image: none; /* Removes any gradient background in dark mode */
+        color: #ffffff; /* Ensures text in table headers is white */
+      }
+      .dark-mode table{
+        background: linear-gradient(135deg, #000000 0%, #000000 100%);
+
+      }
+
+      .dark-mode .contact-form
+      {
+        background: linear-gradient(135deg, #000000 0%, #000000 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Personal Webpage</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <div class="container">
+      <div class="profile-section">
+        <img src="./my-pic.jpg" alt="My Picture" />
+        <div class="text-container">
+          <p>
+            Hello! My name is Long Chau. I'm currently in my last year studying
+            Computer Science at UHD. I first started learning to code back in
+            the 10th grade and have really enjoyed it since then. One of my
+            favorite programming languages is Python because it offers so much
+            flexibility and power. I'm also interested in web development,
+            though I spend a lot of time solving algorithm problems to sharpen
+            my coding skills.
+          </p>
+          <p>
+            In addition to coding, I have a few other passions. I love watching
+            movies, whether it's a thrilling drama or a lighthearted comedy, as
+            they provide a great escape and inspire me in different ways. If
+            you're into coding too, I highly recommend checking out
+            <a href="https://leetcode.com/" target="_blank">LeetCode</a> — it's
+            a great place to practice and prepare for interviews!
+          </p>
+          <p>
+            When I'm not busy coding, I enjoy catching up on sleep to stay
+            energized. Balancing my time between these interests helps me stay
+            motivated and makes every day enjoyable.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-coursework">
+        <div class="skills">
+          <h2>Skills & Interests</h2>
+          <ul>
+            <li>Python Programming</li>
+            <li>Web Development</li>
+            <li>Problem-Solving with Algorithms</li>
+            <li>Watching Movies</li>
+            <li>Baking and Cooking</li>
+          </ul>
+        </div>
+
+        <div class="coursework">
+          <h2>Coursework</h2>
+          <table>
+            <tr>
+              <th>Course</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><strong>Web Development</strong></td>
+              <td>
+                Learning how to build responsive and interactive websites.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Data Structures & Algorithms</strong></td>
+              <td>
+                Sharpening problem-solving skills by understanding data
+                structures.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Operating Systems</strong></td>
+              <td>
+                Understanding how operating systems work and manage resources.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="post">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+
+          <label for="email">Your Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+
+          <label for="message">Your Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Write your message here"
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // Toggle between light and dark mode
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
