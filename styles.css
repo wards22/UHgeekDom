@@ -661,8 +661,8 @@ body {
     background-size: contain; /* Ensures the entire logo fits */
     background-repeat: no-repeat; /* Prevents tiling */
     background-position: center; /* Centers the logo */
-    width: 30px; /* Set the width of the logo */
-    height: 30px; /* Set the height of the logo */
+    width: 100px; /* Set the width of the logo */
+    height: 100px; /* Set the height of the logo */
     margin-bottom: 10px; /* Add spacing below the logo */
 }
 
