@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "styles.css" rel = "stylesheet">
+    <title>UHgeekDom</title>
+    <link rel="icon" href= "resources/uhd-favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class = "background-container">
+    <!--
+    <img id = "background" src = "resources/uhd-gator-uhd-logo.png" alt="UHD LOGO">
+    -->
+    <video id = "background" muted autoplay loop>
+        <source src="resources/metaphor-video.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+<div class = "header-bar">
+    <div class = "left-bar-container">
+        <a class = "logo-container" href = ".">
+            <div class = "logo-image-container">
+                <img class = "logo-image" src = "resources/uhd-gator-head-bw.png" alt="EduGator Head in black and white">
+            </div>
+            <div class = "logo-uhgeekdom">
+                UHgeekDom
+            </div>
+        </a>
+        <!--
+        <img id = "themeController" src = "resources/audio-on.png" onclick = "themeController(); imageChange();">
+        -->
+        <i class="fa fa-gamepad" id="themeController" onclick = "themeController();"></i>
+    </div>
+    <div class="our-project-container">
+        <button class = "link" onclick = "showOrHide()">Our Project</button>
+        <div class = "dropdown-content">
+            <div class = "about-our-project">
+                Contributors to this class project for CS 4300
+            </div>
+            <br>
+            <div class = "contributor"><a class = "contributor-link" href = "#" target = "_blank">Scott</a></div>
+            <br>
+            <br>
+            <div class = "contributor"><a class = "contributor-link" href = "#" target = "_blank">Long</a></div>
+            <br>
+            <div class = "contributor"><a class = "contributor-link" href = "#" target = "_blank">Omar</a></div>
+            <br>
+            <div class = "contributor"><a class = "contributor-link" href = "#" target = "_blank">Ike</a></div>
+            <br>
+            <div class = "contributor"><a class = "contributor-link" href = "#" target = "_blank">Ken</a></div>
+            <br>
+            <br>
+            <div class = "ty">Thank You For Viewing Our Webpage!</div>
+        </div>
+    </div>
+    <div class = "right-bar-container">
+        <div class = "right-bar-items">
+            <a class = "games right-bar-menu-items" href = "#layer-2-anchor">Games</a>
+            <img class = "separator-icon right-bar-menu-items" src = "resources/hexaglow.png" alt="A glowing hexagon">
+            <a class = "anime right-bar-menu-items" href = "#layer-2-anchor">Anime</a>
+            <img class = "separator-icon right-bar-menu-items" src = "resources/hexaglow.png" alt="A glowing hexagon">
+            <a class = "music right-bar-menu-items" href = "#layer-2-anchor">Music</a>
+            <img class = "separator-icon right-bar-menu-items" src = "resources/hexaglow.png" alt="A glowing hexagon">
+            <a class = "contact right-bar-menu-items" href = "#layer-4-anchor">Contact</a>
+        </div>
+        <div class = "right-bar-menu"><div class = "right-bar-menu-button"></div></div>
+    </div>
+</div>
+
+<div class = "layer-1">
+    <div class = "layer-1-bg-sources">
+        <a class = "layer-1-bg-source-1" href = "#" target = "_blank">Lorem Ipsom Delta Filler</a>
+        <br>
+        <a class = "layer-1-bg-source-2" href = "#" target = "_blank">Filler Text 2 Goes Here</a></div>
+    <div class = "layer-1-container">
+        <div class = "layer-1-left">
+            <div class = "goty">
+                Our Game of the Year
+            </div>
+            <div class = "description">
+                A fantastic fantasy game from the publisher behind Persona and Shin Megami Tensei, Metaphor: ReFantazio
+                explores a medieval-like realm filled with magic, assassination attempts, and class strife. Join Will
+                as he meets a wide variety of allies, some recruitable and some not, and villains on his journey to solve
+                the mystery behind the curse placed upon his childhood friend, the Prince.
+            </div>
+            <div class = "layer-1-button-container">
+                <a class = "layer-1-button" href = "https://store.steampowered.com/app/2679460/Metaphor_ReFantazio/">Buy It Now!</a>
+            </div>
+        </div>
+        <div class = "layer-1-right">
+            <img class = "layer-1-right-image" src = "resources/metaphor-refantazio.jpg" alt="Picture showing Metaphor: ReFantazio">
+            <div class = "layer-1-right-caption">
+                Will and Plateau in Akademeia
+            </div>
+            <a class = "layer-1-source" href = "https://en.wikipedia.org/wiki/Metaphor:_ReFantazio" target = "_blank">Dive into the United Kingdom of Euchronia</a>
+        </div>
+    </div>
+    <div id="layer-2-anchor"></div>
+</div>
+
+<div class = "layer-2">
+    <div class = "layer-2-bg">
+        <div class = "layer-2-content">
+            <div class = "layer-2-heading">
+                Here are some things we think you might find interesting
+            </div>
+            <div class = "layer-2-info-container">
+                <div class = "game-container">
+                    <a class = "link-i" href = "https://en.wikipedia.org/wiki/Astro_Bot"><img class = "game-image" src = "resources/astro-bot.jpg" alt="Cover art for Astro Bot"></a>
+                    <div class = "game-subtext">Astro Bot</div>
+                </div>
+                <div class = "anime-container">
+                    <a class = "link-i" href = "https://www.crunchyroll.com/series/GG5H5XQ0D/dan-da-dan"><img class = "anime-image" src ="resources/dandadan-2.png" alt="The cast of Dandadan"></a>
+                    <div class = "anime-subtext">Dandadan</div>
+                </div>
+                <div class = "music-container">
+                    <a class = "link-i" href = "https://youtu.be/vp2UcepWJUU?si=20ZjAdek1OyDILf9"><img class = "music-image" src = "resources/astro-lo-fi.jpg" alt="Thumbnail for Astro Lo-Fi"></a>
+                    <div class = "music-subtext">Chill Lo-Fi</div>
+                </div>
+                <div class = "crossword-container">
+                    <a class = "link-i" href = "https://www.nytimes.com/crosswords"><img class = "crossword-image" src = "resources/nyt-crossword.png" alt="The NYT Crosswords"></a>
+                    <div class = "crossword-subtext">NYT Crosswords</div>
+                </div>
+                <div class = "coding-container">
+                    <a class = "link-i" href = "https://leetcode.com/"><img class = "coding-image" src = "resources/leet-code.png" alt="Leet Code logo"></a>
+                    <div class = "coding-subtext">Coding Challenges</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "layer-3">
+    <a class="layer-3-bg-source" href = "https://www.uhd.edu" target = "_blank">Link To The UHD Website</a>
+    <div class = "layer-3-text">
+        <div class = "layer-3-quote">
+            "You miss 100% of the shots you don't take. -Wayne Gretzky"
+        </div>
+        <div class = "layer-3-quote-source">
+            -Michael Scott
+        </div>
+    </div>
+</div>
+
+<div class = "layer-4">
+    <div class = "layer-4-bg">
+        <div class = "layer-4-content">
+            <div class = "layer-4-text">
+                <div class = "layer-4-text-heading">
+                    Do you like our style?
+                </div>
+                <div class = "layer-4-text-subtext" id="layer-4-anchor">
+                    Consider subscribing to our newsletter! We have a myriad of cat facts that we send via and opt-out
+                    messages. Subscribe by clicking on the button labeled subscribe to the right!
+                </div>
+            </div>
+            <div class = "layer-4-subscribe-container">
+                <a class = "layer-4-subscribe" href = "#">
+                    Subscribe
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "footer">
+    <div class = "footer-bg">
+        <a class = "footer-text" href = "#" target = "_blank">
+            This is a footer
+        </a>
+    </div>
+</div>
+
+</body>
+
+<script src = "home.js"></script>
+</html>
