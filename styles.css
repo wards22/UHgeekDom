@@ -548,7 +548,7 @@ body {
 }
 
 .layer-4-bg {
-    background-color: rgb(0, 120, 60);
+    background-color: rgb(198, 14, 59);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,7 +556,7 @@ body {
     transition: all 0.25s ease-out;
 
     .red-theme & {
-        background-color: rgb(119, 188, 31);
+        background-color: rgb(9, 46, 110);
     }
 
 }
@@ -634,7 +634,7 @@ body {
 /*footer container ----------------*/
 
 .footer-bg {
-    background: rgb(9, 46, 110);
+    background: rgb(198, 14, 59);
     padding: 1.25em 0;
     box-shadow: 0 0 1em rgb(0, 0, 0);
     display: flex;
@@ -644,7 +644,7 @@ body {
     transition: all 0.15s ease-out;
 
     .red-theme & {
-        background: rgb(198, 14, 59);
+        background: rgb(9, 46, 110);
     }
 }
 
@@ -656,10 +656,14 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 .footer {
-    background-color: #222; /* Dark background */
+    background-color: rgb(81, 98, 126); /* Dark background */
     color: #fff; /* White text */
     padding: 40px 20px;
     font-family: Arial, sans-serif;
+
+    .red-theme & {
+        background: rgb(0, 120, 60);
+    }
 }
 
 .footer-container {
@@ -728,12 +732,16 @@ body {
 
 .email-signup button {
     padding: 10px;
-    background-color: #00c4cc;
+    background-color: rgb(198, 14, 59);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+    .red-theme & {
+        background: rgb(9, 46, 110);
+    }
 }
 
 .email-signup button:hover {
